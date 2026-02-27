@@ -6,10 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . && prettier --check . && tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "next": "16.1.6",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -30,5 +38,11 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
-  ]
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx,json,css,scss}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
 }
