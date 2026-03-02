@@ -10,7 +10,7 @@ const buttonVariants = cva(
         primary: "bg-zinc-100 text-zinc-900 hover:bg-zinc-200",
         secondary: "bg-zinc-800 text-zinc-100 hover:bg-zinc-700",
         transparent:
-          "bg-transparent text-zinc-400 hover:bg-zinc-900 hover:text-zinc-300",
+          "bg-transparent text-zinc-400 hover:bg-zinc-900 hover:text-zinc-100",
       },
       size: {
         sm: "h-8 px-3 text-sm rounded-sm",
