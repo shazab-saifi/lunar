@@ -1,6 +1,6 @@
 import { Button } from "./button";
 import Container from "./container";
+import { Heading } from "./heading";
 import { Link } from "./link";
-import Navbar from "./navigation/navbar";
 
-export { Button, Container, Link, Navbar };
+export { Button, Container, Heading, Link };

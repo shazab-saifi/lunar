@@ -73,7 +73,7 @@ const Tab = ({
       onMouseEnter={() => handleSetSelected(tabId)}
       onClick={() => handleSetSelected(tabId)}
       className={cn(
-        "flex items-center gap-1 rounded-lg py-1 pr-2 pl-3 text-sm transition-colors hover:bg-zinc-900",
+        "flex items-center gap-1 rounded-lg py-1 pr-2 pl-3 text-sm transition-colors select-none hover:bg-zinc-900",
         selected === tabId ? "text-zinc-100" : "text-zinc-400"
       )}
     >
@@ -103,7 +103,7 @@ const Content = ({
       transition={{ duration: 0.15, ease: "easeOut" }}
       className="w-3xl rounded-lg border border-zinc-800 bg-zinc-950"
     >
-      <div className="overflow-hidden p-4">
+      <div className="overflow-hidden p-4 select-none">
         {TABS.map((t) => {
           return (
             <div key={t.id}>

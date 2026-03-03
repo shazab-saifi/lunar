@@ -1,9 +1,5 @@
-import { Navbar } from "@/components";
+import { Landing } from "@/ui";
 
 export default function Home() {
-  return (
-    <div className="font-inter min-h-screen w-full">
-      <Navbar />
-    </div>
-  );
+  return <Landing />;
 }
